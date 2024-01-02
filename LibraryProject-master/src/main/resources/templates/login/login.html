@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<div class="back-button">
+    <a href="/"><image src="/img/x.png"></image></a>
+</div>
+<h2><img src="/img/logo.png" class="img-size" onclick="location.href='/'"></h2>
+
+<div class="container">
+    <form th:action="@{/login}" method="post">
+        <input type="hidden" th:name="${_csrf?.parameterName}" th:value="${_csrf?.token}" />
+        <h3>LOGIN</h3>
+        <input type="email" id="userid" name="email" placeholder="아이디를 입력하세요">
+
+        <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+
+        <button type="submit" id="login">로그인</button>
+
+        <hr>
+        <a href="/oauth2/authorization/google" class="btn btn-google btn-user btn-block">
+            <i class="fab fa-google fa-fw"></i> 구글로 로그인하기
+        </a>
+    </form>
+</div>
+<!-- 아이디 / 비번 찾기 -->
+<div class="findlogin">
+    <button class="btn_findid" onclick="location.href='findid.html'">아이디찾기</button>
+    <button class="btn_findpwd" onclick="location.href='findpwd.html'">패스워드찾기</button>
+</div>
+<a href="/signup" class="signup-button">회원가입</a>
+
+</div>
+</body>
+</html>

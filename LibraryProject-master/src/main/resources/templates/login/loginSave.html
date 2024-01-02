@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" type="text/css" href="/css/sign_up.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h2>회 원 가 입</h2>
+<form th:action="@{/user}" method="post">
+    <!-- 토큰을 추가하여 CSRF 공격 방지 -->
+    <input type="hidden" th:name="${_csrf?.parameterName}" th:value="${_csrf?.token}" />
+    <div class="container">
+        <div class="square">
+            <div class="id">
+                <h3>이메일</h3>
+                <!-- <p>영소문자</p> -->
+                <input type="email" id="userid" name="email" placeholder="아이디">
+            </div>
+            <br>
+            <div class="pw">
+                <h3>비밀번호</h3>
+                <input type="password" id="password" name="password" placeholder="비밀번호">
+            </div>
+            <br>
+            <div class="confirmpw">
+                <h3>비밀번호확인</h3>
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="비밀번호확인">
+            </div>
+            <br>
+            <div class="name">
+                <h3>이름</h3>
+                <input type="text" id="username" name="name" placeholder="이름">
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="check-menu-box">
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" name="checkAll" />
+            <label for="checkbox1">약관에 모두 동의</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" name="checkOne" />
+            <label for="checkbox2">(필수) 만 14세 이상입니다</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" name="checkOne" />
+            <label for="checkbox3">(필수) 서비스 이용약관에 동의</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox4" name="checkOne" />
+            <label for="checkbox4">(필수) 개인정보 수집이용에 동의</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox5" name="checkOne" />
+            <label for="checkbox5">(선택) 광고 수신 및 마케팅 이용에 동의</label>
+        </div>
+    </div>
+    <script src="/js/join.js"></script>
+
+    <div class="entrybutton">
+        <a href="/">돌아가기</a>
+        <input type="submit" id="signup" class ="btn_join" value="회원가입">
+    </div>
+</form>
+<!--<script src="/js/agree.js"></script>-->
+</body>
+</html>

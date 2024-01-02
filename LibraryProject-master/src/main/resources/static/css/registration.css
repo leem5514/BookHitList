@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500, 600,900&display=swap');
+
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: "Source Sans Pro", Helvetica, Arial,sans-serif;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 1;
+  background: rgb(245, 245, 245);
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.bold {
+  font-weight: 600;
+}
+.form-require {
+background: #ea352d;
+margin: 0 0 0 8px;
+padding: 2px 4px;
+border-radius: 2px;
+color: #fff;
+font-size: 12px;
+vertical-align: top;
+}
+
+/* 상품 이미지 등록 */
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.sell-upload-head+p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+.sell-upload-drop-box {
+  box-sizing: border-box;
+  flex: 1;
+  position: relative;
+  min-height: 116px;
+  background: #f5f5f5;
+  border: 1px dashed #ccc;
+  font-size: 0;
+  text-align: center;
+  transition: box-shadow ease-out .3s;
+  cursor: pointer;
+}
+.sell-dropbox-container {
+margin: 16px auto 0;
+}
+.horizontal-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 100%; /* 가로 스크롤을 사용할 경우 전체 너비를 활용 */
+  white-space: nowrap; /* 이미지가 한 줄로 표시되도록 합니다. */
+  margin-right: 10px;
+}
+
+.horizontal-images img {
+  width: 150px; /* 이미지의 최대 너비 설정 */
+  height: 150px; /* 이미지의 최대 높이 설정 */
+   /* 이미지 사이 간격 조절 (원하는 간격으로 조절 가능) */
+}
+
+
+
+
+
+
+.form-group label {
+  font-weight: 600;
+}
+label {
+  display: inline-block;
+}
+.sell-content {
+box-sizing: border-box;
+padding: 40px;
+border-top: 1px solid #eee;
+}
+.form-group .input-default {
+  width: 100%;
+  margin: 8px 0 0;
+}
+.input-default {
+box-sizing: border-box;
+height: 48px;
+padding: 10px 16px 8px;
+border-radius: 4px;
+border: 1px solid #ccc;
+background: #fff;
+line-height: 1.5;
+font-size: 16px;
+}
+.form-group label+.textarea-default {
+  margin: 8px 0 0;
+}
+.form-group {
+  margin: 40px 0 0;
+}
+.form-group:first-child {
+margin: 0;
+}
+.textarea-default {
+box-sizing: border-box;
+display: block;
+width: 100%;
+max-width: 100%;
+min-height: 104px;
+padding: 10px;
+border: 1px solid #ccc;
+background: #fff;
+font-size: 16px;
+line-height: 1.5;
+}
+.sell-sub-head {
+  color: #888;
+  font-size: 14px;
+}
+.form-group select {
+  width: 100%;
+}
+.select-default {
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.select-wrap {
+  position: relative;
+  background: #fff;
+}
+.form-group .select-wrap {
+  margin: 8px 0 0;
+}
+.form-group select {
+  width: 100%;
+}
+select {
+-webkit-appearance: none;
+-moz-appearance: none;	
+appearance: none;		
+}
+.select-wrap .icon-arrow-bottom {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  z-index: 2;
+  color: #888;
+  font-size: 8px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.form-question {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0099e8;
+  color: #fff;
+  line-height: 14px;
+  font-size: 12px;
+  text-align: center;
+}
+a {
+  color: #0099e8;
+  text-decoration: none;
+}
+.sell-sub-head {
+color: #888;
+font-size: 14px;
+margin: 0;
+padding: 0;
+}
+.sell-price .form-group .l-left {
+box-sizing: border-box;
+  width: 50%;
+  line-height: 48px;
+}
+.sell-price .form-group .l-right {
+  width: 50%;
+}
+.l-right {
+float: right;
+}
+.sell-price-input .input-default {
+margin: 0;
+text-align: right;
+}
+.sell-price-input {
+line-height: 48px;
+vertical-align: bottom;
+.input-default {
+  width: 160px;
+  text-align: right;
+  float: right;
+}
+}
+.sell-price>li:first-child {
+  padding: 0 0 24px;
+  border: 0;
+}
+.sell-price>li {
+  padding: 24px 0;
+  border-top: 1px solid #ccc;
+}
+
+.sell-btn-box .btn-red {
+  margin: 40px 0 0;
+}
+.btn-red {
+  background: #121212;
+  border: 1px solid #121212;
+  color: #fff;
+}
+.btn-default {
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+}
+.sell-btn-box .btn-gray {
+  width: 100%;
+  margin: 12px auto 0;
+}
+.btn-gray {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+}
+
+
+
+.l-single-container {
+width: 700px;
+margin: 0 auto;
+background: #fff;
+.l-single-head {
+  text-align: center;
+  padding: 32px 16px;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+.l-single-content {
+  padding: 64px;
+  max-width: 320px;
+  .btn-mail {
+    width: 100%;
+    margin: 16px 0 0;
+    background: #eee;
+    i {
+      color: #ccc;
+      margin: 18px 0 0 7px;
+    }
+
+  }
+  .btn-sns-facebook {
+  margin: 16px 0 0;
+  background: #385185;
+  color: #fff;
+ }
+  .btn-sns-google {
+    margin: 16px 0 0;
+    background: #dc4e41;
+    color: #fff;
+  }
+  i {
+    float: left;
+    font-size: 18px;
+    margin: 14px 0px 0 8px;
+  }
+}
+}
+
+@media screen and (min-width: 768px) {
+.sell-upload-box {
+  box-sizing: border-box;
+  width: 620px;
+  padding: 40px;
+}
+}
+@media screen and (min-width: 768px) {
+.sell-upload-drop-box {
+    /* float: right; */
+    width: 620px;
+    margin: 0;
+    min-height: 184px;
+    padding: 40px;
+}
+}
+@media screen and (min-width: 768px) {
+.sell-upload-drop-box pre {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    right: 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+}
+@media screen and (min-width: 768px) {
+.sell-sub-head {
+    float: left;
+}
+}
+@media screen and (min-width: 768px) {
+.sell-form-box {
+    float: right;
+    width: 400px;
+    margin: 0;
+}
+}

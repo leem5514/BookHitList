@@ -1,0 +1,145 @@
+body {
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    font-size: 15px;
+}
+
+.container {
+    margin-top: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 700px;
+    border: 1px solid #ccc;
+}
+
+.square {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.id,
+.pw,
+.confirmpw,
+.name {
+    margin-top: 20px;
+}
+
+.id h3,
+.pw h3,
+.confirmpw h3,
+.name h3 {
+    float: left;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+.check-menu-box {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+
+.entrybutton {
+    width: 60%;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.entrybutton a,
+.entrybutton .btn_join {
+    width: 45%;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    background-color: #272727;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.entrybutton a:hover,
+.entrybutton .btn_join:hover {
+    opacity: 0.8;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.name h3 {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* 회원가입 버튼 */
+.entrybutton {
+    width: 60%;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrybutton a,
+.entrybutton .btn_join {
+    width: 48%;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    background-color: #272727;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.entrybutton a:hover,
+.entrybutton .btn_join:hover {
+    opacity: 0.8;
+}

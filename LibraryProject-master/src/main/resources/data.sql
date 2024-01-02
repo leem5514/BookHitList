@@ -1,0 +1,1 @@
+-- INSERT INTO member_table (member_email, memeber_id, member_name, member_password) VALUES ("d@d.com", "asdf","Kang",1111 );

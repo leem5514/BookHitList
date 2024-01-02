@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html"
+                xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등록화면</title>
+    <link rel="stylesheet" href="write.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel = "stylesheet" href="/css/registration.css" />
+</head>
+<body>
+<main class="l-single-container buy-item-container">
+    <section class="single-main">
+
+        <div id="sell-container">
+
+            <form action="/board/save" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="boardWriter" id="email">
+                <div class="sell-container-inner">
+                    <img class="logo" onclick="location.href='/'" src="/img/logo.png" width="200px" height="50px" />
+                    <h2 class="l-single-head">거래 상품 등록</h2>
+                    <div class="sell-form">
+                    <!-- 이미지등록 -->
+
+                        <div class="sell-upload-box">
+                            <h3 class="sell-up-load-head">사진 등록</h3>
+                            <div class="sell-dropbox-container clearfix">
+                                <div class="sell-upload-drop-box">
+                                    file: <input type="file" name="boardFile" multiple onchange="setThumbnail(event);" accept="image/*" class="sell-upload-drop-file" id="image">
+                                    <div id="image_container" class="horizontal-images"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="/js/registration.js"></script>
+
+                <div class="sell-content">
+                    <div class="form-group">
+                        <label>상품명<span class="form-require">필수</span></label>
+                        <div><input type="text" class="input-default" name="boardTitle" placeholder="상품명（40자 이내）"/></div>
+                    </div>
+                    <div class="form-group">
+                        <label>상품 설명<span class="form-require">필수</span></label>
+                        <textarea class="textarea-default" rows="5" name="boardContents" placeholder="상품의 설명(필수 1,000문자 이내)"></textarea>
+                    </div>
+                </div>
+
+                <div class="sell-content clearfix">
+                    <h3 class="sell-sub-head">상세 설명</h3>
+                    <div class="sell-form-box">
+                        <div class="form-group">
+                            <label>카테고리<span class="form-require">필수</span></label>
+                            <div class="select-wrap">
+                                <select class="select-default" name="category">
+                                    <option value="없음" >---</option>
+                                    <option value="국내도서">국내도서</option>
+                                    <option value="서양도서">서양도서</option>
+                                    <option value="일본도서">일본도서</option>
+                                </select>
+                                <i class="icon-arrow-bottom"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>카테고리<span class="form-require">필수</span></label>
+                            <div class="select-wrap">
+                                <select class="select-default" name="detailCategory">
+                                    <option value="없음">---</option>
+                                    <option value="소설">소설</option>
+                                    <option value="시／에세이">시／에세이</option>
+                                    <option value="인문">인문</option>
+                                    <option value="가정／육아">가정／육아</option>
+                                    <option value="요리">요리</option>
+                                    <option value="건강">건강</option>
+                                    <option value="취미／실용／스포츠">취미／실용／스포츠</option>
+                                    <option value="경제／경영">경제／경영</option>
+                                    <option value="자기 계발">자기 계발</option>
+                                    <option value="종교">종교</option>
+                                    <option value="예술／대중문화">예술／대중문화</option>
+                                    <option value="중／고등 참고서">중／고등 참고서</option>
+                                    <option value="기술／공학">기술／공학</option>
+                                </select>
+                                <i class="icon-arrow-bottom"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 배송료, 현 거주지역, 상품상태 -->
+                <div class="sell-content clearfix">
+                    <h3 class="sell-sub-head">배송 정보</h3>
+                    <div class="sell-form-box">
+                        <div class="form-group">
+                            <label>배송료<span class="form-require">필수</span></label>
+                            <div class="select-wrap">
+                                <select class="select-default" name="deliveryFee">
+                                    <option value="없음">---</option>
+                                    <option value="배송료 포함">배송료 포함</option>
+                                    <option value="착불 배송">착불 배송</option>
+                                    <option value="직거래">직거래</option>
+                                </select>
+                                <i class="icon-arrow-bottom"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>발송지역<span class="form-require">필수</span></label>
+                            <div class="select-wrap">
+                                <select class="select-default" name="area">
+                                    <option value="없음">---</option>
+                                    <option value="서울">서울</option>
+                                    <option value="경기도／인천">경기도／인천</option>
+                                    <option value="강원도">강원도</option>
+                                    <option value="충청북도">충청북도</option>
+                                    <option value="충청남도">충청남도</option>
+                                    <option value="전라북도">전라북도</option>
+                                    <option value="전라남도">전라남도</option>
+                                    <option value="경상북도">경상북도</option>
+                                    <option value="경상남도">경상남도</option>
+                                    <option value="제주도">제주도</option>
+                                </select>
+                                <i class="icon-arrow-bottom"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>상품 상태<span class="form-require">필수</span></label>
+                            <div class="select-wrap">
+                                <select class="select-default" name="state">
+                                    <option value="없음">---</option>
+                                    <option value="중고상품">중고상품</option>
+                                    <option value="새상품">새상품</option>
+                                </select>
+                                <i class="icon-arrow-bottom"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 판매가격 -->
+                <div class="sell-content clearfix">
+                    <h3 class="sell-sub-head">판매가격</h3>
+                    <div class="sell-form-box">
+                        <ul class="sell-price">
+                            <li class="form-group">
+                                <div class="clearfix">
+                                    <label class="l-left">가격<span class="form-require">필수</span></label>
+                                    <div class="l-right sell-price-input">원
+                                        <input type="text" class="input-default" value="" placeholder="예)7,000" name="price">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sell-content sell-btn-box">
+                    <input type="submit" class="btn-default btn-red" value="등록하기">
+                    <a class="btn-default btn-gray" onclick="location.href='/'">돌아가기</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<script src="/js/extractEmail.js"></script>
+</body>
+</html>
