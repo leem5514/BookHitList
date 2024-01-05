@@ -18,7 +18,8 @@
 
 + vscode - front 구현 / intellij -  백 구현 및 서버 / mysql - DB저장
 # 실행 방법
-+ 
++ springframework으로 실행하기 때문에 따로 설정 필요 x
+   - SDK를 17 설정
 # ERD
 + 
 # 화면 구성
