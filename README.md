@@ -27,5 +27,11 @@
 + 마이페이지<br> ![마이페이지의 지도](https://github.com/leem5514/bookhitlistProject/assets/116091798/323c6510-1be5-466c-bba5-cd67b910ab35)
 
 # 오류 내역
-+ 
++ js 을 통한 채팅 기능 구현 진행
+  - 채팅 기록이 db에 저장되지 않는 문제 발생
+     - 해결방안 : 채팅 기능을 컨트롤러와 js 만으로 구현하려고 한 이유 / 추가적으로 엔티티와 dto을 거친 뒤에 그 값을 db에 저장하는 방식 사용 필요 추정
+
++ Failed to connect to service endpoint 라는 예외 발생
+   - AWS 개시 시 EC2 환경이 아닌 곳에서 사용시에 발생하는 예외로 추정
+    - 해결방안 : application.yml 에서 EC2MetadataUtils: error 을 사용하면 이에 관한 예외를 잡을 수 있다. / 하지만 이외 인스턴스에 다른 에러가 발생하여 미해결  
 
