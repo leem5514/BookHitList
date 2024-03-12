@@ -24,7 +24,9 @@
 + 글 작성<br>![4게시글 작성](https://github.com/leem5514/bookhitlistProject/assets/116091798/624995d9-1453-42ee-bb4f-bb2c77c9eedb)
 + 글 리스트<br> ![리스트 정렬](https://github.com/leem5514/bookhitlistProject/assets/116091798/a2525823-7b9b-49af-9207-fcc1797c658c)
 + 상세 페이지 및 채팅<br> ![채팅](https://github.com/leem5514/bookhitlistProject/assets/116091798/58abf8c7-c8d5-4c6b-9df4-bce2e9f6c13d)
-+ 마이페이지<br> ![마이페이지의 지도](https://github.com/leem5514/bookhitlistProject/assets/116091798/323c6510-1be5-466c-bba5-cd67b910ab35)
++ 마이페이지<br>
+  지도 기능, 개인QR, 개인정보 등
+![마이페이지의 지도](https://github.com/leem5514/bookhitlistProject/assets/116091798/323c6510-1be5-466c-bba5-cd67b910ab35)
 
 # 오류 내역
 + js 을 통한 채팅 기능 구현 진행
