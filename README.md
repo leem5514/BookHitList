@@ -17,6 +17,7 @@
 + vscode - 프론트 구현 / intellij -  백 구현 및 서버 / mysql - DB저장
 # 실행 방법
 + springboot 실행으로 intellij에서 실행 권장
++ AWS 을 통한 배표 예정
 # 화면 구성
 + 메인화면<br>![1main](https://github.com/leem5514/bookhitlistProject/assets/116091798/116186b7-9d8c-4b0e-948e-d3edf0b4429b)
 + 로그인 및 구글 로그인<br>![2login](https://github.com/leem5514/bookhitlistProject/assets/116091798/4306ac71-f611-4608-b9c2-9e12252715b7) <br>
