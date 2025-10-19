@@ -46,23 +46,86 @@
    ./gradlew bootRun
    # 또는 IntelliJ에서 Spring Boot 애플리케이션 실행
   
-## 🖥️ 화면 구성
-+ 메인페이지 <br>![1main](https://github.com/leem5514/bookhitlistProject/assets/116091798/116186b7-9d8c-4b0e-948e-d3edf0b4429b)
-+ 로그인 및 구글 로그인<br>![2login](https://github.com/leem5514/bookhitlistProject/assets/116091798/4306ac71-f611-4608-b9c2-9e12252715b7) <br>
-![3googlelogin](https://github.com/leem5514/bookhitlistProject/assets/116091798/db19fc5e-fcc9-46aa-99a2-632aab295734)
-+ 판매글 작성<br>![4게시글 작성](https://github.com/leem5514/bookhitlistProject/assets/116091798/624995d9-1453-42ee-bb4f-bb2c77c9eedb)
-+ 판매 리스트<br> ![리스트 정렬](https://github.com/leem5514/bookhitlistProject/assets/116091798/a2525823-7b9b-49af-9207-fcc1797c658c)
-+ 판매 상세 페이지 및 채팅<br> ![채팅](https://github.com/leem5514/bookhitlistProject/assets/116091798/58abf8c7-c8d5-4c6b-9df4-bce2e9f6c13d)
-+ 마이페이지<br>
-  지도 기능, 개인QR, 개인정보 등
-![마이페이지의 지도](https://github.com/leem5514/bookhitlistProject/assets/116091798/323c6510-1be5-466c-bba5-cd67b910ab35)
+## 🖥️ 실행 화면
+<table>
+<tr>
+<td align="center" width="50%">
+  <sub><b>🏠 메인</b></sub><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/116186b7-9d8c-4b0e-948e-d3edf0b4429b">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/116186b7-9d8c-4b0e-948e-d3edf0b4429b" width="460" alt="메인" />
+  </a>
+</td>
+<td align="center" width="50%">
+  <sub><b>🔐 로그인 · 구글 로그인</b></sub><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/4306ac71-f611-4608-b9c2-9e12252715b7">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/4306ac71-f611-4608-b9c2-9e12252715b7" width="460" alt="로그인" />
+  </a><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/db19fc5e-fcc9-46aa-99a2-632aab295734">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/db19fc5e-fcc9-46aa-99a2-632aab295734" width="460" alt="구글 로그인" />
+  </a>
+</td>
+</tr>
 
-# 트러블 슈팅
-+ js 을 통한 채팅 기능 구현 진행
-  - 채팅 기록이 db에 저장되지 않는 문제 발생
-     - 해결방안 : 채팅 기능을 컨트롤러와 js 만으로 구현하려고 한 이유 / 추가적으로 엔티티와 dto을 거친 뒤에 그 값을 db에 저장하는 방식 사용 필요 추정
+<tr>
+<td align="center" width="50%">
+  <sub><b>📝 판매글 작성</b></sub><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/624995d9-1453-42ee-bb4f-bb2c77c9eedb">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/624995d9-1453-42ee-bb4f-bb2c77c9eedb" width="460" alt="판매글 작성" />
+  </a>
+</td>
+<td align="center" width="50%">
+  <sub><b>📋 판매글 목록</b></sub><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/a2525823-7b9b-49af-9207-fcc1797c658c">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/a2525823-7b9b-49af-9207-fcc1797c658c" width="460" alt="판매글 목록" />
+  </a>
+</td>
+</tr>
 
-+ Failed to connect to service endpoint 라는 예외 발생
-   - AWS 개시 시 EC2 환경이 아닌 곳에서 사용시에 발생하는 예외로 추정
-    - 해결방안 : application.yml 에서 EC2MetadataUtils: error 을 사용하면 이에 관한 예외를 잡을 수 있다. / 하지만 이외 인스턴스에 다른 에러가 발생하여 미해결  
+<tr>
+<td align="center" width="50%">
+  <sub><b>💬 상세 · 채팅</b></sub><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/58abf8c7-c8d5-4c6b-9df4-bce2e9f6c13d">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/58abf8c7-c8d5-4c6b-9df4-bce2e9f6c13d" width="460" alt="상세 및 채팅" />
+  </a>
+</td>
+<td align="center" width="50%">
+  <sub><b>👤 마이페이지(지도/QR)</b></sub><br>
+  <a href="https://github.com/leem5514/bookhitlistProject/assets/116091798/323c6510-1be5-466c-bba5-cd67b910ab35">
+    <img src="https://github.com/leem5514/bookhitlistProject/assets/116091798/323c6510-1be5-466c-bba5-cd67b910ab35" width="460" alt="마이페이지 지도" />
+  </a>
+</td>
+</tr>
+</table>
+
+## 🐞 트러블 슈팅
+
+### 1) 실시간 채팅 — 메시지 미저장/순서 꼬임
+- 🚨 문제  
+  WebSocket 1:1 채팅에서 메시지가 간헐적으로 DB에 저장되지 않거나, Room 간 순서가 뒤섞임.
+- 🔎 원인(가설→검증)  
+  컨트롤러↔JS 레벨 송수신만 처리하여 **영속화 누락** 여지가 있었고, **정렬 키(roomId, seq/createdAt)** 부재로 동시 요청 시 순서 보장이 어려웠음.
+- 🔧 해결  
+  1) `Message(roomId, senderId, payload, createdAt, seq)` **엔티티 도입**  
+  2) **저장 → 브로드캐스트** 순서 고정(`@Transactional save()` 성공 시에만 publish)  
+  3) 다중 인스턴스 대비 **Redis Pub/Sub**로 브로드캐스트  
+  4) (roomId, seq) **UNIQUE 인덱스**로 중복·역전 방지
+- ✅ 검증  
+  동일 Room에 1,000건 동시 전송 테스트 → **손실 0 / 역전 0** 확인(단위·통합 테스트)
+
+  
+### 2) 로컬 실행 시 `Failed to connect to service endpoint` 문제 발생
+- 🚨 문제  
+  로컬/비 EC2 환경에서 애플리케이션 실행 시 AWS SDK가 **EC2 메타데이터(IMDS)** 접근을 시도하다 실패 로그(`EC2MetadataUtils`) 출력.
+- 🔎 원인(가설→검증)  
+  자격·리전이 명시되지 않아 SDK 기본 자격 체인이 **IMDS 우선 조회** → 로컬에는 IMDS가 없어서 연결 실패.  
+  환경변수/프로파일로 리전·자격을 지정하면 로그가 사라지는 것으로 원인 확인.
+- 🔧 해결  
+  1) 로컬에서 IMDS 비활성화: `AWS_EC2_METADATA_DISABLED=true`  
+  2) 리전/자격 명시(택1+):  
+     - 환경변수: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`  
+     - 또는 `application-dev.yml`에서 리전 강제, **dev/prod 프로파일 분리**
+- ✅ 검증  
+  - 앱 기동 시 `EC2MetadataUtils` 관련 경고 미출력 확인  
+  - S3 `ListBuckets` 등 간단 호출 성공(권한 정상)  
+  - dev ↔ prod 전환 시 로그에 리전/자격 경로가 명확히 표기
 
