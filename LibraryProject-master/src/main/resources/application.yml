@@ -40,5 +40,5 @@ spring:
               - email
               - profile
 jwt:
-  issuer: khdg1202@naver.com
+  issuer: 
   secret-key: springboot-jwt
